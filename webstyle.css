@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#topnav{
+    background-color: lightgray;
+}
+#Main{
+    background-image: url("Anh/backgroundsecondnav.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+div .fmain{
+    width: 50%;
+    text-align: justify;
+    display: inline-block;
+    color: white;
+}
