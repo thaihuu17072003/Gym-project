@@ -11,7 +11,7 @@ body{
     margin: auto;
     max-width: 1000px;
     padding: 5px 300px;
-    background-color: black;
+    background-color: #f2f2f2;
     font-size: 20pt;
 }
 nav ul{
@@ -24,10 +24,10 @@ nav ul{
 }
 nav li a{
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
     position: relative;
     cursor: pointer;
-    text-shadow: 1px 1px 1px white,1px 1px 3px white;
+    text-shadow: 1px 1px 1px black,1px 1px 3px black;
 }
 nav li a::after{
     content: "";
@@ -36,11 +36,11 @@ nav li a::after{
     height: 2px;
     width: 100%;
     left: 0;
-    background-color: whitesmoke;
+    background-color: black;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
     transform: scaleX(0);
-    text-shadow: 1px 1px 1px white,1px 1px 3px white;
+    text-shadow: 1px 1px 1px black,1px 1px 3px black;
 }
 nav li a:hover::after{
     transform: scaleX(1);
