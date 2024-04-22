@@ -1,43 +1,86 @@
 body{
-    font-family: Verdana, sans-serif;
-    font-size: 15pt;
+
     width: 100%;
-}
-/*-----------nav-----------*/
-nav ul{
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: rgba(170, 14, 157, 0.97);
-    position: fixed;
-    top: 0;
+}
+/*-----------nav-----------*/
+
+.topnav{
+    font-family: "Monaco", monospace;
+    margin: auto;
+    max-width: 1000px;
+    padding: 5px 300px;
+    background-color: black;
+    font-size: 20pt;
+}
+nav ul{
+    list-style: none;
     width: 100%;
-}
-nav li{
-    float: right;
-}
-nav li.logo{
-    float: left;
-}
-nav li img{
-    width: 50px;
-    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
 }
 nav li a{
-    display: block;
-    color: whitesmoke;
-    text-align: center;
     text-decoration: none;
-    padding: 20px 22px;
+    color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px white,1px 1px 3px white;
+}
+nav li a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: whitesmoke;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+    text-shadow: 1px 1px 1px white,1px 1px 3px white;
+}
+nav li a:hover::after{
+    transform: scaleX(1);
 }
 /*----------------main--------------*/
 #main {
-    margin-top: 4%;
+    font-family: Verdana, sans-serif;
     width: 100%;
     text-align: center;
     color: whitesmoke;
-    background-image: url('Anh/backgroundsecondnav.jpg');
+    background-image: url('Anh/background.jpg');
+   background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    font-size: 30pt;
+    text-shadow: -1px 0 rgba(94, 87, 87, 0.97), 0 1px rgba(94, 87, 87, 0.97), 1px 0 rgba(94, 87, 87, 0.97), 0 -1px rgba(94, 87, 87, 0.97);
+}
+div#main div{
+    width: 50%;
+    float: left;
+}
+.intro{
+    text-align: justify;
+}
+.video{
+    align-items: center;
+    width: 700px;
+    height: 360px;
+}
+/*-----------------Ly do--------------------*/
+#lydo{
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+    font-size: 20pt;
+}
+div#lydo div li{
+    width: 33.33%;
+    float: left;
 }
 .ul1{
     list-style-type: none;
@@ -65,6 +108,7 @@ nav li a{
 }
 /*-----------------Dang ki-----------------*/
 #dangki{
+    font-family: Verdana, sans-serif;
     box-sizing: border-box;
 }
 .h1{
@@ -83,8 +127,8 @@ label {
     display: inline-block;
 }
 
-input[type=submit] {
-    background-color: rgba(184, 91, 175, 0.97);
+#dangki input[type=submit] {
+    background-color: black;
     color: whitesmoke;
     padding: 12px 20px;
     border: none;
@@ -93,8 +137,8 @@ input[type=submit] {
     float: right;
 }
 
-input[type=submit]:hover {
-    background-color: #970980;
+ #dangki input[type=submit]:hover {
+    background-color: gray;
 }
 
 .dangkithongtin {
@@ -118,6 +162,62 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
+}
+/*-----------------Goi-----------------*/
+#khoatap{
+    text-align: left;
+    font-family: Verdana, sans-serif;
+
+}
+#khoatap h1{
+    font-size: 60px;
+    text-align: center;
+}
+.flex-goi{
+    display: flex;
+    justify-content: center;
+    column-gap:50px;
+}
+#khoatap p{
+    text-align: center;
+}
+.tieude{
+    font-size: 30px;
+}
+.gia{
+    font-size: 25px;
+    color: rgba(117, 15, 15, 0.97);
+}
+.flex-goi >div{
+    width: 400px;
+    margin: 100px;
+    text-align: center;
+    line-height: 70px;
+}
+.goi1t{
+    background-color: #f2f2f2;
+    width: 400px;
+    height: 550px;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+}
+.goi3t{
+    background-color: #f2f2f2;
+    width: 400px;
+    height: 550px;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+}
+#khoatap input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#khoatap [type=submit]:hover {
+    background-color: gray;
 }
 /*------------------Lien he-------------*/
 #lienhe{

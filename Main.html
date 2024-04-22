@@ -11,30 +11,44 @@
     </head>
     <body>
     <nav>
-        <ul>
-            <li class="logo"><img alt="Thai Gym" src="Anh/Thaigym logo.png" ></li>
-            <li><a href="#dangki" >Đăng kí tập thử</a></li>
-            <li><a href="#khoatap" >Lịch trình</a></li>
-            <li><a href="#hanghoa" >Hàng hoá</a></li>
-            <li><a href="#lienhe" >Liên hệ</a></li>
-        </ul>
+        <div class="topnav">
+            <ul>
+                <li><a href="#lienhe" >Liên hệ</a></li>
+                <li><a href="#hanghoa" >Hàng hoá</a></li>
+                <li><a href="#khoatap" >Gói thành viên</a></li>
+                <li><a href="#dangki" >Đăng kí tập thử</a></li>
+            </ul>
+        </div>
     </nav>
     <div id="main">
-              <h1>Giới thiệu</h1>
-            <p>THAI GYM được thành lập vào đầu năm 2024 và được công nhận bởi hiệp hội Gym thế giới.</p>
-            <p>Bạn nên đến với chúng tôi vì: </p>
-              <ul class="ul1">
-                <li>Máy tập hiện đại và bảo hành hàng tháng.</li>
-                <li>Nhân viên tận tâm.</li>
-                <li>PT có trình độ, bằng cấp.</li>
-              </ul>
-              <ul class="ul2">
-                <li>Nhà tắm, khăn, nước miễn phí.</li>
-                <li>Luôn mở của 24/24.</li>
-                  <li>Bãi đỗ xe miễn phí.</li>
-              </ul>
-
+        <div class="intro">
+            <p><b>Chào mừng bạn đến với THAI GYM - điểm đến hàng đầu cho những ai yêu thích yoga, cardio, gym, calisthenics và tập luyện chuyên nghiệp.
+                Hãy đến và khám phá!</b></p>
         </div>
+    <div >
+        <video class="video" autoplay muted>
+            <source src="video/Scaring People With Calisthenics in Gyms.mp4" type="video/mp4">
+        </video>
+    </div>
+        </div>
+    <div id="lydo">
+        <p><b>Lý do chọn chúng tôi:</b></p>
+        <div>
+            <ul class="ul1">
+                <li><i class="fa-solid fa-gears"></i> Máy tập hiện đại và bảo hành hàng tháng.</li>
+                <li><i class="fa-solid fa-person-military-pointing"></i> Nhân viên tận tâm.</li>
+                <li><i class="fa-solid fa-user-tie"></i> PT có trình độ, bằng cấp.</li>
+            </ul>
+        </div>
+        <br><br>
+        <div>
+            <ul class="ul2">
+                <li><i class="fa-solid fa-shower"></i> Nhà tắm, khăn, nước miễn phí.</li>
+                <li><i class="fa-regular fa-clock"></i> Luôn mở của 24/24.</li>
+                <li><i class="fa-solid fa-square-parking"></i> Bãi đỗ xe miễn phí.</li>
+            </ul>
+        </div>
+    </div>
     <div id="dangki" >
         <h1 class="h1"><strong>Đăng kí tập thử miễn phí</strong></h1>
             <div class="dangkithongtin">
@@ -61,6 +75,18 @@
                         </div>
                         <div class="cot2">
                             <input type="email" id="email" name="email" >
+                        </div>
+                    </div>
+                    <div class="dong">
+                        <div class="cot1">
+                            <label for="goi">Gói</label>
+                        </div>
+                        <div class="cot2">
+                            <select id="goi" name="goi">
+                                <option value="blank"></option>
+                                <option value="q1">Gói 1 tháng</option>
+                                <option value="q2">gòi 3 tháng</option>
+                            </select>
                         </div>
                     </div>
                     <div class="dong">
@@ -100,22 +126,25 @@
             </div>
         </div>
     <div id="khoatap">
-        <h1>Thông tin gói</h1>
-      <div>
-        <p><strong>Gói 1 tháng</strong></p>
-        <p><em>299.000đ</em></p>
-        <input type="button" name="buttonlt" onclick="alert('Đăng kí thành công')" value="Đăng kí">
+        <h1><strong>Các gói tập tại THAI GYM</strong></h1>
+        <div class="flex-goi">
+      <div class="goi1t">
+        <h2 class="tieude"><strong>Gói 1 tháng</strong></h2>
+        <h3 class="gia"><em><b>299.000<sup>đ</sup>/1tháng</b></em></h3>
+          <p><i class="fa-regular fa-circle-check"></i> Thanh toán hàng tháng</p>
+          <p><i class="fa-regular fa-circle-check"></i> Không hợp đồng, không ràng buộc</p>
+          <p><i class="fa-regular fa-circle-check"></i> Tập luyện không thời gian</p>
+        <a href="#dangki"><input type="submit" name="submit1t"  value="Đăng kí"></a>
       </div>
-      <div>
-        <p><strong>Gói 3 tháng</strong></p>
-        <p><em>890.000đ</em></p>
-        <input type="button" name="buttonlt" onclick="alert('Đăng kí thành công')" value="Đăng kí">
+      <div class="goi3t">
+        <h2 class="tieude"><strong>Gói 3 tháng</strong></h2>
+        <h3 class="gia"><em><b>890.000<sup>đ</sup>/3tháng</b></em></h3>
+          <p><i class="fa-regular fa-circle-check"></i> Thanh toán 3 tháng tặng 1 tháng</p>
+          <p><i class="fa-regular fa-circle-check"></i> Không hợp đồng, không ràng buộc</p>
+          <p><i class="fa-regular fa-circle-check"></i> Tập luyện không thời gian</p>
+        <a href="#dangki"><input type="submit" name="submit3t"  value="Đăng kí"></a>
       </div>
-      <div>
-        <p><strong>Gói 6 tháng</strong></p>
-        <p><em>1.150.000đ</em></p>
-        <input type="button" name="buttonlt" onclick="alert('Đăng kí thành công')" value="Đăng kí">
-      </div>
+        </div>
     </div>
     <section id="hanghoa">
         <h1>Thông tin hàng hoá</h1>
@@ -162,6 +191,7 @@
             <input type="button" name="buttonhh" onclick="alert('Đặt hàng thành công')" value="Đặt hàng">
      </div>
     </section>
+    <footer>
     <div id="lienhe">
       <div>
         <h1> Thông tin liên hệ</h1>
@@ -176,5 +206,6 @@
         <p><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/110+Phạm+Văn+Đồng,+Phường+3,+Gò+Vấp,+Thành+phố+Hồ+Chí+Minh,+Việt+Nam/@10.8152143,106.6795514,17z/data=!3m1!4b1!4m6!3m5!1s0x317528e12d33e351:0x8f94e44b9aa14970!8m2!3d10.8152143!4d106.6821263!16s%2Fg%2F11fx8ddyqf?hl=vi-VN&entry=ttu"> 110 Phạm Văn Đồng, Phường 3, Gò Vấp, Thành phố Hồ Chí Minh</a></p>
       </div>
     </div>
+    </footer>
     </body>
 </html>
